@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Доставка</title>
+			<meta http-equiv="Content-Type"   content="text/html; charset=utf-8" >
+			<meta name="description"  content="Доставка" >
+			<meta name="keywords"  content="доставка, способы доставки, самовывоз" >
+			<meta name="viewport"  content="width=device-width" >
+			<meta name="robots"  content="index, follow" >
+			<meta name="author"  content="Михаил Кузьменко" >
+			<meta name="yandex-verification"  content="20723929a1fbc328" >
+			<meta  property="og:type" content="website" >
+			<meta  property="og:title" content="Доставка" >
+			<meta  property="og:description" content="Доставка" >
+			<meta  property="og:url" content="http://herb-ua.local/delivery.html" >
+			<meta  property="og:image" content="http://herb-ua.local//images/products/food/cell_activator.png" >
+				<link href="http://herb-ua.local/favicon.ico" rel="shortcut icon" type="image/png" />
+				<link href="http://herb-ua.local/favicon.ico" rel="icon" type="image/png" />
+				<link type="text/css" rel="stylesheet" href="/styles/main.css?v=1" />
+			<link type="text/css" rel="stylesheet" href="/styles/prettify.css" />
+			<link type="text/css" rel="stylesheet" href="/styles/animate.css" />
+				<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+			<script type="text/javascript" src="/js/wow.min.js"></script>
+			<script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
+			<script type="text/javascript" src="/js/functions.js"></script>
+			<script type="text/javascript" src="/js/validator.js"></script>
+			<script type="text/javascript" src="/js/prettify.js"></script>
+	</head><body>
+	<div id="interactive_message"></div>
+		<noscript>
+			</noscript>
+	
+	<div id="container">
+		<header>
+			<img id="logo_herbalife" src="/images/logo_herbalife.png" alt="логотип Гербалайф" title="логотип Гербалайф" />			<div id="auth">	
+		<div id="login">
+		<form name="auth" action="/delivery.html" method="post" >
+			<input type="text" name="login"  placeholder="Логин или Email" />
+			<input type="password" name="password"  placeholder="Пароль" />
+			<input type="submit" name="auth" value="ВХОД" />
+		</form>
+	</div>
+	<div id="links_reset">
+		<a id="l_login" href="/remind.html">Забыли логин?</a>
+		<a id="l_password" href="/reset.html">Забыли пароль?</a>
+		<a id="l_registr" href="/register.html">РЕГИСТРАЦИЯ</a>
+	</div>
+</div>	
+			<div class="cart">
+	<img src="/images/phone_4.png" alt="иконка телефона" title="иконка телефона" />
+	<div>
+		+38097 555-64-58	</div>
+	<div class="butt_call_back">
+		ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+	</div>
+</div>	
+<div id="call_back" >
+	<img class="close_button" />
+	<div class="clear"></div>
+	<form name="call_back" method="post" action="http://no_online.ru/function.php" >
+		<input type='hidden' name="func" value="call_back" />
+		<label>Ваше имя</label><br/>
+		<input type="text" name="name" required maxlength="100" value="" /><br/>
+		<label>Контактный телефон<br/><i>(10 цифр без пробелов)</i></label><br/>
+		<input type='tel' pattern='[0-9]{10}' name="phone" value="" required /><br/>
+		<div class="message"></div>
+		<label>"Введите код с картинки:</label>
+		<input type="text" name="captcha" value="" autocomplete="off" required />
+		<div class="captcha">
+			<img src="/images/update.png" alt="Обновить" />
+			<img src="../captcha.php" alt="Капча" />
+		</div>
+		<input type="submit" name="call_back" value="Отправить" >
+	</form>
+</div>
+<div class="success" >
+	<img class="close_button" />
+	<div class="clear"></div>
+	<div></div>
+</div>	
+		</header>	
+		<div class="clear"></div>
+		<nav id="horizontal">
+	<ul>
+					<li>
+				<a   href="/">Главная</a>
+			</li>
+					<li>
+				<a   href="/results.html">Результаты</a>
+			</li>
+					<li>
+				<a class="active"  href="/delivery.html">Доставка</a>
+			</li>
+					<li>
+				<a   href="/contacts.html">Контакты</a>
+			</li>
+			</ul>
+	<form name="search" action="/search.html" method="get" >
+		<table class="float-right">
+			<tr>
+				<td><input type="text" name="query" placeholder="Поиск" ></td>
+				<td><input type="submit" value="" ></td>
+			</tr>
+		</table>
+	</form>
+</nav>
+		<div class="clear"></div>
+		<div id="content">
+			<div id="promo_left">
+				<div id="promo_image">
+	<img src="/images/promo_img/cell_activator.png" alt="купить Гербалайф" title="купить Гербалайф" />
+</div>			</div>
+			<div id="promo_right">
+				<div id="consultation_folder">
+	<div class="header"><p>КОРЗИНА</p></div>
+	<div>
+		<nav>
+							<p class="null_products" >0 продуктов в корзине.</p>
+				
+		</nav>
+	</div>
+	<a class="footer_consulting_folder" href="/cart.html">ВХОД В КОРЗИНУ</a>
+</div>
+			</div>
+			<div id="promo_center">
+				<div id="promo_top">
+	<p class="not_auth_user">Уважаемые покупатели! Компанией Гербалайф установлены новые правила "Рекламы Цен", по которым доступ к ценам на продукты возможен только по паролю. Для получения пароля <a class="infa_discounts" href="http://update24.ru/register">"Зарегистрируйтесь"</a> или Отправьте Вашу заявку или обратитесь к Независимому партнеру Гербалайф в разделе <a class="infa_discounts" href="contacts">"КОНТАКТЫ"</a></p></div>			</div>
+			<div class="clear"></div>
+			<div class="flex">
+				<div id="left_col">
+					<div class="left_block">
+	<div class="left_header"><p>КАТАЛОГ ПРОДУКЦИИ</p></div>
+	<div class="left_content">
+		<nav>
+			<ul>
+											<li>
+		<a   href="/">
+			<span>Главная</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/balanced.html">
+			<span>Сбалансированное питание</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/sport.html">
+			<span>Спортивное питание</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/complex.html">
+			<span>Комплексные программы</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/recipes.html">
+			<span>Рецепты от Гербалайф</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/cosmetics.html">
+			<span>Уход за внешностью</span>
+		</a>
+			</li>
+											<li>
+		<a   href="/related.html">
+			<span>Сопутствующие товары</span>
+		</a>
+			</li>
+							</ul>	
+		</nav>
+	</div>
+</div>
+
+
+<div class="left_block">
+	<div class="left_header"><p>ОБУЧАЮЩИЕ МАТЕРИАЛЫ</p></div>
+	<div class="left_content">
+		<nav>
+			<ul>
+											<li>
+		<a   href="/video_courses_on_nutrition.html">
+			<span>Видеокурсы по питанию</span>
+		</a>
+			</li>
+							</ul>	
+		</nav>
+	</div>
+</div>
+
+
+				</div>
+				<div id="center_col">
+					﻿<div class="center_block" >
+	<div class="center_header">
+		<h1>Доставка</h1>
+	</div>
+			<div class="hornav">
+					<a href="/">Главная</a>			<img src="/images/hornav_arrow.png" alt="разделительная стрелка" title="разделительная стрелка" />		<p>Доставка</p>	</div>
+
+		<div class="center_content">
+		<div id="delivery">
+			<h3><a href="/function.php?func=self">Cамовывоз.</a></h3>
+						<h3><a href="/function.php?func=delivery">Доставка по Украине.</a></h3>
+				
+		</div>
+	</div>	
+</div>				</div>
+				<div id="right_col">
+					<div class="block">
+	<div class="header"><p>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</p></div>
+	<div class="content">
+		<nav>
+										<div id="rev_3">
+					<table>
+						<tr>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<img class="avatar" src="http://herb-ua.local/images/avatars/default.png" alt="отзывы покупателей" title="отзывы покупателей гербалайф" />
+								</a>
+							</td>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<p class="text_block_right"><b>Михаил</b> Делаю заказы не первый раз. Всегда все четко и быстро. Рекомендую.</p>
+								</a>	
+							</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="clear"></div>
+									<hr/>
+											<div id="rev_2">
+					<table>
+						<tr>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<img class="avatar" src="http://herb-ua.local/images/avatars/573367733d090.png" alt="отзывы покупателей" title="отзывы покупателей гербалайф" />
+								</a>
+							</td>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<p class="text_block_right"><b>Наталья</b> Сделала заказ, мне посоветовали доставку в постамат, в результате не прогадала)) не надо ждать курьера. Забрала свои  коктейли в ближайшем ТЦ мой станции метро. Спасибо.</p>
+								</a>	
+							</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="clear"></div>
+									<hr/>
+											<div id="rev_1">
+					<table>
+						<tr>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<img class="avatar" src="http://herb-ua.local/images/avatars/5733685a66ff3.png" alt="отзывы покупателей" title="отзывы покупателей гербалайф" />
+								</a>
+							</td>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<p class="text_block_right"><b>Андрей</b> Спасибо большое. Всё дошло быстро. Заказом доволен, очень хороший сайт. Буду рекомендовать друзьям.</p>
+								</a>	
+							</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="clear"></div>
+									<hr/>
+											<div id="rev_4">
+					<table>
+						<tr>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<img class="avatar" src="http://herb-ua.local/images/avatars/ElenaAksenova.png" alt="отзывы покупателей" title="отзывы покупателей гербалайф" />
+								</a>
+							</td>
+							<td>
+								<a href="/userreviews/reviews.html#add_review">
+									<p class="text_block_right"><b>Елена</b> Пользуюсь услугами этого интернет-магазина.Обслуживанием и качеством товара я очень довольна.Благодарю!</p>
+								</a>	
+							</td>
+						</tr>	
+					</table>
+				</div>
+				<div class="clear"></div>
+									</nav>
+	</div>
+	<div class="block_footer">
+		<p><a href="/userreviews/reviews.html#add_review">ДОБАВИТЬ ОТЗЫВ</a></p>
+	</div>
+</div>
+<div id='my-share'></div>
+<script>
+	var share = Ya.share2('my-share', {
+		theme: {
+			services: 'vkontakte,facebook,gplus,odnoklassniki,twitter,moimir,linkedin,lj',
+			counter: false,
+			lang: 'ru',
+			limit: 8,
+			size: 's',
+			bare: false
+		},
+		
+		hooks: {
+			onready: function () {
+				//alert('инициализация блока');
+				this.updateContent({ 
+					title: 'Доставка',
+					description: 'Доставка',
+					url: 'http://herb-ua.local/delivery.html',
+					image: 'http://update24.ru/images/promo_img/cell_activator.png'
+				});
+				this.updateContentByService({ 
+					facebook: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					gplus: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					odnoklassniki: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					twitter: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					moimir: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					linkedin: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					},
+					lj: {
+						title: 'Доставка',
+						description: 'Доставка',
+						url: 'http://herb-ua.local/delivery.html',
+						image: 'http://update24.ru/images/promo_img/cell_activator.png'
+					}
+				});
+			},
+
+			onshare: function (name) {
+				//alert('нажата кнопка' + name);
+			}
+		}
+	});
+</script>				</div>
+			</div>	
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		﻿<footer>
+	<div id="f_sep_1"></div>
+	<nav>
+		<ul>
+							<li>
+					<a   href="/">Главная</a>
+				</li>
+							<li>
+					<a   href="/results.html">Результаты</a>
+				</li>
+							<li>
+					<a class="active"  href="/delivery.html">Доставка</a>
+				</li>
+							<li>
+					<a   href="/contacts.html">Контакты</a>
+				</li>
+					</ul>
+	</nav>
+	<form name="search" action="/search.html" method="get" >
+		<table>
+			<tr>
+				<td><input type="text" name="query" placeholder="Поиск" ></td>
+				<td><input type="submit" value="" ></td>
+			</tr>
+		</table>
+	</form>
+	<div class="clear"></div>
+	<p>Copyright &copy; 2014-2017 Кузьменко Михаил Юрьевич. Все права защищены.</p>
+	<div id="counter">
+		<!-- Yandex.Metrika informer -->
+		<!--<a href="https://metrika.yandex.ru/stat/?id=41282494&amp;from=informer"
+		target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/41282494/3_0_53FF53FF_33FF33FF_0_pageviews"
+		style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>-->
+		<!-- /Yandex.Metrika informer -->
+	</div>
+</footer>	</div>
+</body>
+</html>
