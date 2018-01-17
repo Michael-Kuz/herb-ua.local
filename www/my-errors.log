@@ -1,0 +1,3 @@
+06.10.2017 19:03:00<br>SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://turbosms.in.ua/api/wsdl222.html' : failed to load external entity "http://turbosms.in.ua/api/wsdl222.html"
+<br>0<br>Z:\home\herb-ua.local\www\lib\sms_class.php<br>11<br>06.10.2017 19:11:05<br>SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://turbosms.in.ua/api/wsdl222.html' : failed to load external entity "http://turbosms.in.ua/api/wsdl222.html"
+<br>0<br>Z:\home\herb-ua.local\www\lib\sms_class.php<br>11<br>
