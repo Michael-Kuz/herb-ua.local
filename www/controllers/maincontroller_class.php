@@ -69,8 +69,9 @@ class MainController extends Controller {
 		
 		$delivery = new Delivery();
 		$delivery->hornav = $hornav;
-		reset(Config::$deliveries["delivery"]);//на всякий случай сбрасываем указатель массива в начало
-		list($key,$value) = each(Config::$deliveries["delivery"]);
+		//reset(Config::$deliveries["delivery"]);//на всякий случай сбрасываем указатель массива в начало
+		//list($key,$value) = each(Config::$deliveries["delivery"]);
+		foreach( Config::$deliveries["delivery"] as $key=>$value );
 		$delivery->delivery = $value;
 				
 		$this->render($delivery);

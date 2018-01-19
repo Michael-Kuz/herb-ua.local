@@ -22,7 +22,9 @@
 							</td>
 						</tr>
 					<?php } ?>
-					<?php for( $i=0; $i<count($cart_list)-2; $i++ ) {?>
+					<?php 
+					$n = !isset($cart_list) ? 0 : count($cart_list)-2;
+					for( $i=0; $i < $n; $i++ ) {?>
 						<tr class="cart_list">
 							<td>
 								<img class="img" src="<?=$cart_list[$i]["img"]?>" alt="<?=$cart_list[$i]["title"]?>" />

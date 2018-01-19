@@ -133,9 +133,9 @@
 			<figure id="flavors" >
 				<img src="images/7_vkusov_mal.png" alt="7 вкусов" />
 			</figure>
-			<object width="470" height="353">
-				<iframe width="500" height="300" src="http://www.youtube.com/embed/dJKnkmvCcGA" frameborder="0" allowfullscreen></iframe>
-			</object>	
+			<div class='youtube'>
+				<iframe class='youtube_video' width="auto" height="auto" src="http://www.youtube.com/embed/dJKnkmvCcGA" frameborder="0" allowfullscreen></iframe>
+			</div>	
 		</section>
 		<section>
 			<h2>Информация с этикетки</h2>

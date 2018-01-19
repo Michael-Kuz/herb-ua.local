@@ -95,6 +95,7 @@ div.clear{
 	position: relative;
 	padding-bottom: 56.29% ;
 	width: 100%;
+	height: 0px;
 	overflow:hidden;		
 }
 
@@ -344,7 +345,7 @@ header div.cart div {
 		border-right: none;
 		background: linear-gradient(180deg, #5eae2f 0%, #68c134 100%);
 		color: #fff;
-		margin: 3px 0px 0px 8px;
+		margin: 3px 0px 0px 0px;
 		padding-left: 5px;
 		height: 29px;
 		width: 200px;
@@ -1148,10 +1149,37 @@ label[for="review_captcha"]{
 }
 
 /*==== страничка с видео по питанию ====*/
-#video td {
-	margin: 0 auto;
-	vertical-align: top;
-} 
+#video{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+	.blogVideo{
+		width: 300px;
+		max-width: 300px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+		.blogVideo_youtube{
+			position: relative;
+			height: 0px;
+			padding-bottom: 56.29%;
+		}
+			.blogVideo_youtube_iframe{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+			}
+		.blogVideo_title{
+			color: #53a241;
+			text-align: center;
+			font-size: 80%;
+		}
 
 /*==== страничка с описанием комплексной программы ====*/
 .product #head_desc p{

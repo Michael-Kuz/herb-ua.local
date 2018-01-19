@@ -252,7 +252,7 @@ $(document).ready( function() {
 			var el_order_select = $("#order select");
 			var el_order_address = $("#order .order_address");
 			var el_self_export = $("#order .self_export");
-			if (el_order_select.get(0).value == "0"){
+			if (el_order_select.get(0).value == "0" ){
 				$(".order_address").css("display", "none");
 				$(".self_export").css("display", "none");
 			}else if (el_order_select.get(0).value == "1" || el_order_select.get(0).value == "2" || el_order_select.get(0).value == "3" ){
