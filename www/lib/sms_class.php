@@ -12,9 +12,8 @@ class Sms{
 		
 		// Данные авторизации   
 		$auth = [  
-			//'login' => 'loggate',//right loggin
-			'login' => 'loggate222',   
-			'password' => 'WranglerTurbosms1964'   
+			'login' => Config::SMS_LOGIN,   
+			'password' =>  Config::SMS_PASSWORD  
 		]; 
 		// Авторизируемся на сервере   
 		$result = $client->Auth($auth);
@@ -30,8 +29,8 @@ class Sms{
 		// Подпись отправителя может содержать английские буквы и цифры. Максимальная длина - 11 символов.   
 		// Номер указывается в полном формате, включая плюс и код страны   
 		$sms = [   
-			'sender' => 'NewOrderUa',   
-			'destination' => '+380975556458',   
+			'sender' => Config::SMS_SIGNATURE,   
+			'destination' => Config::SMS_PHONE,   
 			'text' => $text 
 		];
 		//$result = $client->SendSMS($sms);

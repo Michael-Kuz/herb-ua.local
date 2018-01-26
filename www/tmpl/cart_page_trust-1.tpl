@@ -22,9 +22,8 @@
 							</td>
 						</tr>
 					<?php } ?>
-					<?php 
-					$n = !isset($cart_list) ? 0 : count($cart_list)-2;
-					for( $i=0; $i < $n; $i++ ) {?>
+					<?php $n = !isset($cart_list) ? 0 : count($cart_list)-2; 
+					for( $i=0; $i<$n; $i++ ) {?>
 						<tr class="cart_list">
 							<td>
 								<img class="img" src="<?=$cart_list[$i]["img"]?>" alt="<?=$cart_list[$i]["title"]?>" />
@@ -157,6 +156,8 @@
 							<img src="/images/update.png" alt="Обновить" />
 							<img src="../captcha.php" alt="Капча" />
 						</div>
+						<label for="agreement">Я прочитал <a href="#block_form" class="win-security-policy">Политика Безопасности</a><br>и согласен с условиями</label>
+						<div class='clear'></div>
 						<button class="button_consultation" type="submit" name="addorder" value="ОТПРАВИТЬ">ОФОРМИТЬ ЗАКАЗ</button>
 					</div>	
 				</div>

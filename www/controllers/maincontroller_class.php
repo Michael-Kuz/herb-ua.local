@@ -862,13 +862,18 @@ class MainController extends Controller {
 		$hornav = $this->getHornav();
 		$hornav->addData($this->title);
 		
-		$form = new Form();
+		$form = new Form('register_var1');
 		$form->header = false;
-		$form->name = "register";
 		$form->action = URL::current();
+		$form->name = $this->request->name;
+		$form->addDIV( array("form_name", "email", "password", "password_conf", "captcha", "checked" ) );
 		$form->message = $this->fp->getSessionMessage($message_name);
-		$form->text("name", "Имя и/или фамилия:", "<td>", $this->request->name, "Имя и/или фамилия:");
-		//$form->text("login", "Логин:", "<td>", $this->request->login, "Логин:");
+		$form->form_name = "register";
+		$form->email = $this->request->email;
+		$form->checked = $this->request->agreement;
+		
+		/* $form->text("name", "Имя и/или фамилия:", "<td>", $this->request->name, "Имя и/или фамилия:");
+		 //$form->text("login", "Логин:", "<td>", $this->request->login, "Логин:");
 		$form->text("email", "E-mail:", "<td>", $this->request->email, "E-mail:");
 		$form->password("password", "Пароль:", "<td>", "Пароль:");
 		$form->password("password_conf", "Подтвердите пароль:", "<td>", "Подтвердите пароль:");
@@ -879,7 +884,7 @@ class MainController extends Controller {
 		//$form->addJSV("login", $this->jsv->login());
 		$form->addJSV("email", $this->jsv->email());
 		$form->addJSV("password", $this->jsv->password("password_conf"));
-		$form->addJSV("captcha", $this->jsv->captcha());
+		$form->addJSV("captcha", $this->jsv->captcha()); */
 		
 		$register = new Register();
 		$register->header = $this->title;

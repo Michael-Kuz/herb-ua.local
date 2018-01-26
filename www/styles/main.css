@@ -861,19 +861,82 @@ label[for="review_captcha"]{
 
 /*==== форма регистрации пользователя ===*/
 #register {
-	padding: 0px 5px 0px 0px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	font-size: 80%;
+	width: 60%;
 }
+	#register label{
+		float: left;
+	}
+	#register input{
+		float: right;
+		margin: 10px 0px 5px 0px;
+	}
+						
+	#register .captcha{
+		float: right;
+	}
+	#register a{
+		color: #308A30;
+		text-decoration: none;
+	}
+		#register a:hover{
+			color: #308A30;
+			text-decoration: underline;
+		}
+	
+	#register input[type="checkbox"] {
+		height: 15px;
+		width: 15px;
+	}	
+	#register button{
+		float: right;
+		margin-top: 10px;
+	}
 #register .message {
 	color: #ff0000;
 	text-align: center;
 	font-size: 100%;
 }
-#register form table tr td {
-	padding-top: 10px;
-}
-#register form table tr td input {
+/*=== Политика безопасности ===*/
+#security-policy{
+	background: rgba(51,37,37,0.58);
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
 	width: 100%;
+	z-index: 100;
 }
+
+	.security-policy-child{
+		background: #fff;
+		margin: 15% auto;
+		overflow: auto;
+		height: 50%;
+		width: 50%;
+	}
+		.security-policy-child a{
+			background: url("../images/but_close.png") no-repeat center center;
+			display: block;
+			position: fixed;
+			height: 21px;
+			width: 21px;
+		}
+		.security-policy-child a:hover{
+			background: url("../images/but_close_active.png") no-repeat center center;
+		}
+		.security-policy-child div{
+			margin: 0px 21px 0px 25px;
+			text-align: justify;
+		}
+			.security-policy-child div h2, .security-policy-child div h3{
+				text-align: center;
+			}
+
+
 #delivery {
 	padding: 40px 0px 0px 15px;
 }
