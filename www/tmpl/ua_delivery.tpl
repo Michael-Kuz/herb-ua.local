@@ -15,7 +15,7 @@
 					<!--<div class="type_region_delivery_price">
 						<p><?=$delivery?> грн.</p>
 						<p>бесплатно</p>	
-					</div> -->
+					</div>-->
 					<div class="clear"></div>
 				</div>
 				<ul>

@@ -70,8 +70,13 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	
+<<<<<<< HEAD
 	margin: 0px 10px;
 	padding: 30px 20px 20px 20px;
+=======
+	//margin: 0px 10px;
+	//padding: 30px 20px 20px 20px;
+>>>>>>> videoModuleView
 	position: relative;
 	z-index: 200;
 }
@@ -242,9 +247,9 @@
 						</div>
 					<?php }else if( URL::addGET( $tab, "tab", 3 ) == $tab_active ){ ?>
 							<div class="iveningShakeContent_title">Видео тренинг о Вечернем коктейле.</div>
-							<object width="500" height="300">
-								<iframe width="500" height="300" src="http://www.youtube.com/embed/j1wI00LfRlo" frameborder="0" allowfullscreen></iframe>
-							</object>
+							<div class='youtube'>
+								<iframe class='youtube_video' width='auto' height='auto' src="http://www.youtube.com/embed/j1wI00LfRlo" frameborder="0" allowfullscreen></iframe>
+							</div>
 					<?php }else if( URL::addGET( $tab, "tab", 4 ) == $tab_active ){ ?>
 							<?php if( $show_img ){ ?>
 								<?php $img = explode("/",$show_img);?>

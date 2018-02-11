@@ -3,6 +3,7 @@ class Cart extends Module {
 
 	const ISARRAY = true;	
 	public $cart = [];
+
 	public function __construct($auth_user,$discount){
 		parent::__construct($auth_user,$discount);
 		$this->cart = $this->getCart($auth_user);

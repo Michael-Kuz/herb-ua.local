@@ -252,24 +252,7 @@ $(document).ready( function() {
 	$("#order_step1 img").bind("mouseout", function handlerMouseOut(){
 		$("#order_step1 img").attr( "src","images/cart_order.png" );
 	});
-	//-----------------------------------------------------------------------------
-	/*  обработка поля селект на странице ORDER при событии load */
-	/*$(window).load( function changeDelivery(){
-			var el_order_select = $("#order select");
-			var el_order_address = $("#order .order_address");
-			var el_self_export = $("#order .self_export");
-			if (el_order_select.get(0).value == "0"){
-				$(".order_address").css("display", "none");
-				$(".self_export").css("display", "none");
-			}else if (el_order_select.get(0).value == "1" || el_order_select.get(0).value == "2" || el_order_select.get(0).value == "3" ){
-				$(".self_export").css("display", "none");
-				$(".order_address").css("display", "table-row");
-			}
-			else{ 
-				$(".order_address").css("display", "none");
-				$(".self_export").css("display", "table-row");
-			}
-	});*/
+	
 	//----------------------------------------------------------------------------
 	/*  обработка поля селект на странице ORDER при событии chenge*/
 	$("#order select").bind("change", function changeDelivery(){

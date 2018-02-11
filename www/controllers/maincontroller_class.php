@@ -69,7 +69,10 @@ class MainController extends Controller {
 		
 		$delivery = new Delivery();
 		$delivery->hornav = $hornav;
-						
+
+		foreach( Config::$deliveries["delivery"] as $key=>$value );
+		$delivery->delivery = $value;
+
 		$this->render($delivery);
 	}
 	
@@ -448,6 +451,7 @@ class MainController extends Controller {
 			$new_order = new OrderDB(); //открываем новый обьект Ордер
 			$new_order->product_ids = $_SESSION["cart"];
 			$new_order->summa = $content_cart->cart["cart_summa"];
+
 			foreach( Config::$deliveries[$this->request->type_delivery] as $key => $value );//получаем $key - тип доставки $value - стоимость доставки		//  Формируем массив соответствия ключей базы данных с ключами формы
 			$fields = array( array("delivery", $key), 
 							array("delivery_cost",$_SESSION["ForFreeDelivery"] ? $value : $this->getDeliveryCost( $this->request->type_delivery ) ),
@@ -474,13 +478,14 @@ class MainController extends Controller {
 				 // отправляем сообщение на мэйл заказчика с параметрами его заказа
 				$this->mail->send( $new_order->email, array("order"=>$new_order,"delivery"=>$new_order->delivery,"delivery_price"=>$new_order->delivery_cost, "content_cart"=>$content_cart), "orderMessForCustomer" );
 				//Отправляем SMS-уведомление о поступлении нового заказа
-				 try{
+				try{
 					$result = $this->sms->sendSms( 'New order '.$new_order->phone );
 				}catch( Exception $e ){
 					chdir(Config::DIR_ERRORS_LOG);
 					$err_str = date('d.m.Y H:i:s' ).PHP_EOL.$e->getMessage().PHP_EOL.$e->getFile().PHP_EOL.$e->getLine().PHP_EOL;
 					error_log( $err_str, 3, Config::MY_LOG_FILE );
 				} 
+
 				{//в любом случае инф по смс сохраняем в my-errors.log даже если все ОК
 					if( !empty($result) ){
 						chdir(Config::DIR_ERRORS_LOG);
