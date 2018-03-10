@@ -1,57 +1,52 @@
 ﻿<style>
-#f1_evening_shake .desc_title {
-	background-color: #376092;
+#f2_men .desc_title {
+	background-color: #F89937;
 	border-radius: 0px 10px 10px 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	box-sizing: border-box;
+	color: #fff;
+	padding: 25px 0px 0px 0px;
 	text-align: center;
 	height: 67px;
-	width: 410px;
-}
-#f1_evening_shake .desc_title p {
-	color: #fff;
-	margin: 0px 0px 0px 0px;
-	padding: 10px 0px 0px 0px;
-	font-size: 100%;
+	width: 350px;
 }
 
-#f1_evening_shake section {
+#f2_men section {
 	margin: 20px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
 
-#f1_evening_shake .inside-nav{
+#f2_men .inside-nav{
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
 	margin-top: 30px;
 }
 
-#f1_evening_shake .tab-evening-shake {
+#f2_men .tab-evening-shake {
 	background-color: #eee;
 	border-radius: 25px 0px 0px 0px;
 	box-shadow: 2px -2px 2px rgba(0,0,0,0.2);
 	position: relative;
 	z-index: 100;
 }
-#f1_evening_shake .active {
+#f2_men .active {
 	border-top: 2px solid  #6BC735;
 	background-color: #fff;
 	z-index: 300;
 }
-#f1_evening_shake .tab-evening-shake:hover{
+#f2_men .tab-evening-shake:hover{
 	background-color: #fff;
 }
-#f1_evening_shake .negative-m div{
+#f2_men .negative-m div{
 	margin-bottom: -2px;
 }
-#f1_evening_shake .negative-m div:not(:first-child){
+#f2_men .negative-m div:not(:first-child){
 	margin-left: -5px;
 }
-#f1_evening_shake .negative-m div:last-child{
+#f2_men .negative-m div:last-child{
 	margin-right: -1px;
 }
-#f1_evening_shake .list-style a{
+#f2_men .list-style a{
 	color: #3e434a;
 	box-sizing: border-box;
 	display: table-cell;
@@ -63,7 +58,7 @@
 	height: 50px;
 }
 
-#f1_evening_shake .iveningShakeContent{
+#f2_men .iveningShakeContent{
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 	
 	display: flex;
@@ -74,7 +69,7 @@
 	position: relative;
 	z-index: 200;
 }
-#f1_evening_shake .iveningShakeContent_title{
+#f2_men .iveningShakeContent_title{
 	background-color: rgba(122,193,66,1);
 	box-sizing: border-box; 
 	color: #fff;
@@ -90,7 +85,7 @@
 	height: 50px;
 }
 
-	#f1_evening_shake .iveningShakeContent_title:after{
+	#f2_men .iveningShakeContent_title:after{
 		border-top: 10px solid rgba(107,199,53,1);
 		border-left: 20px solid rgba(107,199,53,0);
 		border-right: 20px solid rgba(107,199,53,0);
@@ -103,14 +98,14 @@
 		top: 50px;
 	}
 
-#f1_evening_shake .iveningShakeContent_list{
+#f2_men .iveningShakeContent_list{
 	color: rgba(62,67,74,1);
 	font-size: 0.9em;
 	margin: 20px 0px;
 	list-style-image: url(../images/galka.png);
 }
 
-#f1_evening_shake .iveningShakeContent_icon{
+#f2_men .iveningShakeContent_icon{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -120,17 +115,17 @@
 	width: 150px;
 }
 
-#f1_evening_shake .iveningShakeContent_icon-octagon{
+#f2_men .iveningShakeContent_icon-octagon{
 	width: 100px;
 	height: 100px;
 }
 
-#f1_evening_shake .iveningShakeContent_icon-title{
+#f2_men .iveningShakeContent_icon-title{
 	color: rgba(62,67,74,1);
 	font-size: 0.9em;
 }
 
-#f1_evening_shake .iveningShakeContent_icon-title span{
+#f2_men .iveningShakeContent_icon-title span{
 	color: rgba(122,193,66,1);
 	font-size: 1.2em;
 	font-weight: 600;
@@ -157,60 +152,27 @@
 
 </style>
 
-<div id="f1_evening_shake">
+<div id="f2_men">
 	<div class="desc_title">
-		<p>УЖИН, КОТОРЫЙ ВАМ НУЖЕН<br>НЕТ вечернему перееданию, ДА полноценному сну</p>
+		ФОРМУЛА БОЛЬШИХ ДОСТИЖЕНИЙ
 	</div>
 	
 	<article>
 		<section>
-			<p class="red_line">Все необходимые питательные вещества, которые нужны для сбалансированного ужина без риска вечернего и ночного переедания, всегда у вас под рукой. В своей основе Вечерний коктейль содержит продукт-бестселлер Herbalife – протеиновый коктейль Формула 1. Это готовый к употреблению комплекс из необходимых макро- и микро-элементов, фитонутриентов и клетчатки.</p>
-			<p class="red_line">Формула 1 Вечерний коктейль содержит аминокислоту триптофан и углевод мальтодекстрин, способствующий повышению уровня триптофана в крови. Из триптофана далее образуется мелатонин, ответственный за суточные ритмы и здоровый полноценный сон.</p>
-			<nav class="inside-nav list-style .negative-m">
-				<div class="tab-evening-shake <?php if( URL::addGET( $tab, "tab", 1 ) == $tab_active ) { ?>active<?php  } ?>"><a href="<?=URL::addGET( $tab, "tab", 1 )?>">Ф1 вечерний коктейль</a></div>
-				<div class="tab-evening-shake <?php if( URL::addGET( $tab, "tab", 2 ) == $tab_active ) { ?>active<?php  } ?>"><a href="<?=URL::addGET( $tab, "tab", 2 )?>">Использование</a></div>
-				<div class="tab-evening-shake <?php if( URL::addGET( $tab, "tab", 3 ) == $tab_active ) { ?>active<?php  } ?>"><a href="<?=URL::addGET( $tab, "tab", 3 )?>">Видео</a></div>
-				<div class="tab-evening-shake <?php if( URL::addGET( $tab, "tab", 4 ) == $tab_active ) { ?>active<?php  } ?>"><a href="<?=URL::addGET( $tab, "tab", 4 )?>">Рецепты</a></div>
-			</nav>
+			<p class="justify box-sizing padding-15">Потребности мужского организма могут отличаться от женского. К примеру, у мужчин выше суточная потребность в витамине А – микроэлементе, важном для поддержания защитных сил организма, которые у сильного пола менее стойкие. Повышенная потребность в этом витамине у мужчин обоснована и большими, по сравнению с женщинами, размерами тела.</p>
+			<p class="justify box-sizing padding-15"><br>Формула 2 комплекс витаминов и минералов для мужчин создан для обогащения рациона оптимальным количеством микронутриентов.</p>
 			<div class="iveningShakeContent">
-				<?php if( URL::addGET( $tab, "tab", 1 ) == $tab_active ){ ?>
+				
 					<div class="iveningShakeContent_title">
-						Что такое Вечерний коктейль:
+						Что такое Формула 2 для мужчин:
 					</div>
 					<ul class="iveningShakeContent_list">
-						<li>Вечерняя еда без лишних калорий</li>
-						<li>1 продукт = 2 использования: ужин или легкий вечерний перекус перед сном</li>
-						<li>Способствует предотвращению вечернего и ночного переедания</li>
-						<li>Насыщает без чувства тяжести</li>
-						<li>Способствует полноценному сну и хорошему самочувствию на следующий день</li>
-						<li>Безграничное количество рецептов</li>
-						<li>Победитель международной премии «Инновационный продукт года 2017»</li> 
+						<li>ЗАЩИТНЫХ СИЛ ОРГАНИЗМА. Содержит витамины А и С, которые помогают поддержать защитные силы организма.</li>
+						<li>МЫШЕЧНОЙ ФУНКЦИИ. Содержит магний, который способствует нормальному функционированию мышц.</li>
+						<li>МЕТАБОЛИЗМА. Содержит рибофлавин, помогающий поддержать метаболизм.</li>
+						<li>УМСТВЕННОЙ ДЕЯТЕЛЬНОСТИ. Содержит витамин В5, который способствует поддержке умственной деятельности.</li>
 					</ul>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_1.png" alt="" title="" >
-						<div class="iveningShakeContent_icon-title">Содержит достаточно белка</div>
-					</div>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_2.png" alt="" title="">
-						<div class="iveningShakeContent_icon-title">Содержит клетчатку</div>
-					</div>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_3.png" alt="" title="">
-						<div class="iveningShakeContent_icon-title">Содержит полезные жиры</div>
-					</div>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_4.png" alt="" title="">
-						<div class="iveningShakeContent_icon-title">Низкий уровень сахара</div>
-					</div>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_5.png" alt="" title="">
-						<div class="iveningShakeContent_icon-title">Лёгкий, но сытный</div>
-					</div>
-					<div class="iveningShakeContent_icon">
-						<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_6.png" alt="" title="">
-						<div class="iveningShakeContent_icon-title">Низкокалорийный</div>
-					</div>
-					<?php }else if( URL::addGET( $tab, "tab", 2 ) == $tab_active ){ ?>
+									
 						<div class="iveningShakeContent_title">1 ПРОДУКТ = 2 ИСПОЛЬЗОВАНИЯ</div>
 						<div class="iveningShakeContent_icon-title"><span>ВАР1:</span> Замена ужина - использование Вечернего коктейля около 6-7 часов вечера</div>
 						<div class="iveningShakeContent_icon">
@@ -238,12 +200,12 @@
 							<img class="iveningShakeContent_icon-octagon" src="../images/f1_evening_12.png" alt="" title="">
 							<div class="iveningShakeContent_icon-title">способствует<br><span>ПОЛНОЦЕННОМУ СНУ</span><br>и хорошему самочувствию на следующий день</div>
 						</div>
-					<?php }else if( URL::addGET( $tab, "tab", 3 ) == $tab_active ){ ?>
+					
 							<div class="iveningShakeContent_title">Видео тренинг о Вечернем коктейле.</div>
 							<div class='youtube'>
 								<iframe class='youtube_video' width='auto' height='auto' src="http://www.youtube.com/embed/j1wI00LfRlo" frameborder="0" allowfullscreen></iframe>
 							</div>
-					<?php }else if( URL::addGET( $tab, "tab", 4 ) == $tab_active ){ ?>
+					
 							<?php if( $show_img ){ ?>
 								<?php $img = explode("/",$show_img);?>
 								<?php $recipes = RecipesDB::getOnImg( $img[count($img)-1] ); foreach( $recipes as $recipe );?>
@@ -283,8 +245,7 @@
 												<?php } $i++; ?>
 									<?php } ?>
 								</table>
-							<?php } ?>	
-					<?php } ?>
+							<?php } ?>
 			</div>
 		</section>	
 	</article>
