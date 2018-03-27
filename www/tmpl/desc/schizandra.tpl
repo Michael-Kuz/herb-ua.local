@@ -5,7 +5,7 @@
 		margin: 0px 0px 0px 0px;
 		padding: 0px 0px 0px 0px;
 		text-align: center;
-		height: 60px;
+		height: 85px;
 		width: 300px;
 	}
 	#shizandra .desc_title p {
